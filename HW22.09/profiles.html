@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заявка</title>
+    <link rel="stylesheet" href="CSS/style1.css">
+</head>
+<body class="class-second">
+<form action="#" method="post">
+    <fieldset>
+        <legend class="class-third">Заявка</legend>
+            <div>
+                <label for="text">Введите Ваше Имя</label>
+                 <input id="text" type="text" placeholder="Ирина">
+            </div>
+            <div>
+                <label for="text">Введите Вашу Фамилию</label>
+                <input id="text" type="text" placeholder="Иванова">
+            </div>
+            <div>
+                <label for="tel">Номер для связи</label>
+                <input id="tel" type="tel" placeholder="&#128222 +12344567890">
+            </div>
+    <fieldset>
+        <legend class="class-four">Укажите вид работ</legend>
+            <div>
+                <label><input name="chk []" type="checkbox"> Макияж </label>
+                <label><input name="chk []" type="checkbox"> Прическа </label>
+            </div>
+    </fieldset>
+
+            <div>
+                <label for="textarea">Ваши пожелания</label>
+                 <textarea id="textarea" placeholder="Укажите пару слов о том, что Вы хотите"
+                      cols="20" rows="4"
+                      maxlength="100"></textarea>
+            </div>
+
+            <div>
+                <label for="imgfile">Загрузите Вашу фотографию</label>
+                <input id="imgfile" type="file" accept="image/jpeg">
+             </div>
+
+            <p>
+            <button type="submit">
+                <!--<a href="thx.html"><b>Отправить</b></a>-->
+            </button>
+            <button type="reset">
+                <b>Сброс</b>
+            </button>
+            <button type="button">
+                <a href="index.html"> <b>Назад</b></a>
+            </button>
+            </p>
+    </fieldset>
+</form>
+</body>
+</html>

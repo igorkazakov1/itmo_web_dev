@@ -1,0 +1,18 @@
+.class-1 {
+    background-image: url("../img/mainf.jpg");
+    background-size:100%
+}
+
+.class-2 {
+    background: burlywood;
+    width: 60%;
+}
+
+.class-3 {
+    width: 55%;
+}
+
+.class-4 {
+    text-align: left;
+    font-size: 30px;
+}

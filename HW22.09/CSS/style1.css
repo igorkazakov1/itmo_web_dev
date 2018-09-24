@@ -1,0 +1,45 @@
+
+.class-first {
+    color: black;
+    text-align: right;
+    text-decoration: underline;
+    font-size: 20pt;
+}
+
+.class-second {
+    background-image: url("../img/кисть.jpg"); background-size: 100%;
+}
+
+.class-third {
+    color: antiquewhite;
+    text-decoration-style: solid;
+    font-size: larger;
+    text-align: center;
+}
+
+.class-four {
+    color: antiquewhite;
+    text-decoration-style: solid;
+    font-size: larger;
+    text-align: left;
+}
+
+form{
+    color: antiquewhite;
+    text-decoration-style: solid;
+    width:25%;
+}
+
+label {
+    float: left;
+}
+
+div {
+    text-align: right;
+}
+
+h2 {
+    text-align: center;
+    font-size: x-large;
+    color: coral;
+}
