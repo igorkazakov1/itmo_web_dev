@@ -24,6 +24,9 @@
     text-align: left;
 }
 
+.class-center {
+    text-align: center;
+}
 form{
     color: antiquewhite;
     text-decoration-style: solid;
