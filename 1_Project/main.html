@@ -1,0 +1,190 @@
+<!--Доделать формы-->
+<!--навигация, добавить страницы-->
+<!--адаптивность-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Визажист. Стилист</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="JS/bootstrap.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item-1">
+           <nav>
+               <ul class="nav nav-pills ">
+                   <li class="nav-item">
+                       <a class="nav-link active" href="main.html">Главная</a>
+                   </li>
+                   <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Макияж</a>
+                       <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Пункт 1</a>
+                           <a class="dropdown-item" href="#">Пункт 2</a>
+                           <a class="dropdown-item" href="#">Пункт 3</a>
+                       </div>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="about.html">Обо мне</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="gallery.html">Портфолио</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#">Цены</a>
+                   </li>
+                   <li class="nav-item nodisp" data-toggle="modal" data-target="#ModalAutp">
+                       <a class="nav-link" href="#ModalAutp">Войти</a>
+                   </li>
+                   <li class="nav-item nodisp" data-toggle="modal" data-target="#Modalreg">
+                       <a class="nav-link" href="#Modalreg">Регистрация</a>
+                   </li>
+               </ul>
+           </nav>
+        </div>
+        <div class="item-2">
+            <nav>
+                <div>
+                    <button type="button" class="btn btn-form " data-toggle="modal" data-target="#ModalAutp">Войти</button>
+                    <div class="modal fade" id="ModalAutp" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content modal-bg">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="ModalLabel">Авторизация</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="emailautp" class="form-control-label">Введите Email:</label>
+                                            <input type="email" class="form-control" id="emailautp">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="passwordautp" class="form-control-label">Введите пароль:</label>
+                                            <input type="password" class="form-control" id="passwordautp">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-form" data-dismiss="modal">Отмена</button>
+                                    <button type="submit" class="btn btn-form">Войти</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button type="button" class="btn btn-form " data-toggle="modal" data-target="#Modalreg">Регистрация</button>
+                    <div class="modal fade" id="Modalreg" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content modal-bg">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="ModalLabel2">Регистрация</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="namereg" class="form-control-label">Ваше имя:</label>
+                                            <input type="text" class="form-control" id="namereg">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="snamereg" class="form-control-label">Ваша фамилия:</label>
+                                            <input type="text" class="form-control" id="snamereg">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailreg" class="form-control-label">Введите Email:</label>
+                                            <input type="email" class="form-control" id="emailreg">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="passwordreg" class="form-control-label">Введите пароль:</label>
+                                            <input type="password" class="form-control" id="passwordreg">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-form" data-dismiss="modal">Отмена</button>
+                                    <button type="submit" class="btn btn-form">Зарегистрироваться</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div> <!--Вход Регистрация-->
+        <div class="item-3"></div>
+        <div class="item-4 text-center">
+            <h2>
+                Студия красоты.
+            </h2>
+            <h3>
+                Макияж. Прически
+            </h3>
+            <h4>
+                Как известно, привлекательность женщины зависит не только от природных данных.
+                Всего несколько штрихов макияжа, нанесенных умелой рукой, могут сделать заурядную девушку симпатичной,
+                а симпатичную — так и вовсе красивой.
+            </h4>
+        </div>
+        <div class="item-5"></div>
+        <div class="item-6">
+            <div class="card card-bgcolor transition">
+                <img class="card-img-top" src="../1_Project/IMG/IMG_3726_1.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Вид макияжа</h5>
+                    <p class="card-text">Краткое описание техники</p>
+                    <a href="#" class="btn btn-form">Подробнее...</a>
+                </div>
+            </div>
+            <div class="card card-bgcolor transition">
+                <img class="card-img-top" src="../1_Project/IMG/IMG_3726_1.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Вид макияжа</h5>
+                    <p class="card-text">Краткое описание техники</p>
+                    <a href="#" class="btn btn-form">Подробнее...</a>
+                </div>
+            </div>
+            <div class="card card-bgcolor transition">
+                <img class="card-img-top" src="../1_Project/IMG/IMG_3726_1.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Вид макияжа</h5>
+                    <p class="card-text">Краткое описание техники</p>
+                    <a href="#" class="btn btn-form">Подробнее...</a>
+                </div>
+            </div>
+            <div class="card card-bgcolor transition">
+                <img class="card-img-top" src="../1_Project/IMG/IMG_3726_1.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Вид макияжа</h5>
+                    <p class="card-text">Краткое описание техники</p>
+                    <a href="#" class="btn btn-form">Подробнее...</a>
+                </div>
+            </div>
+        </div> <!--Карточки-->
+        <div class="item-7">
+            <p class="align-text-bottom text-md-left text-sm-right" >
+                Смоки айс – это техника макияжа глаз, при которой создается плавный переход
+                более светлых оттенков теней в более темные (их может бы от двух до бесконечности):
+                получается так называемый эффект дымки. В бьюти-сфере smoky eyes занимают примерно то же место,
+                что и маленькое черное платье в мире моды: признанная классика, к которой рано или поздно обращаются все.
+                Тренд на «дымчатый» макияж появился в 1920-х: под влиянием звезд немого кино, Теды Бары и Клары Боу,
+                девушки пристрастились к драматичному мейкапу глаз. Такими мир и запомнил «ревущие двадцатые»: короткие стрижки,
+                такие же короткие платья и эпатажный мейк.
+            </p>
+        </div>
+        <div class="item-8">
+            <video controls width="100%" height="100%">
+                <source src="../1_Project/Video/v1.mp4">
+
+            </video>
+        </div>
+        <div class="item-9">
+
+        </div>
+    </div>
+</body>
+</html>
+<!-------------------------------------------------------------------------------------------------------->
