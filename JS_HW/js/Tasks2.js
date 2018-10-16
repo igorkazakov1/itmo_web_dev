@@ -22,7 +22,7 @@ if (XY === Xz + Yz) {
 // Получим номер месяца от 0 до 11 (где, 0 - это январь, 1 - февраль и тд)
 
 let month = new Date().getMonth();
-if (0 <= month && month <= 1 && month === 11 ) {
+if ((0 <= month && month <= 1) || month === 11 ) {
     console.log('Зима');
 } else if (2 <= month && month <= 4) {
     console.log('Весна');
@@ -38,11 +38,17 @@ if (0 <= month && month <= 1 && month === 11 ) {
 //     В цикле выводить сколько моющего средства осталось после мытья каждой тарелки
 // В конце вывести, сколько тарелок осталось, когда моющее средство закончилось или наоборот.
 
-dishW = prompt('Сколько моющего средства есть?');
+let dishW = prompt('Сколько моющего средства есть?');
+dishW = parseFloat(dishW)
 if (dishW <=0) {
     console.log('Нечем мыть!')
 }
-for ( let plate = prompt('Сколько тарелок мыть?');(dishW >= 0); plate--) {
+let plate = prompt('Сколько тарелок мыть?');
+plate = parseFloat(plate)
+if (plate <=0 ) {
+    console.log('Нечего мыть!')
+}
+for ( ;(dishW >= 0); plate--) {
     console.log('Отсталось тарелок - ', plate, 'Осталось моющего средства', dishW)
     if (plate <=0) break;
     dishW -= 0.5;
