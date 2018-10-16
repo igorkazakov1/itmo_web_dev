@@ -60,7 +60,7 @@ let p , a, n;
 p = [90];
 a = 90;
 n = 5;
-for (i=2;a-i*n >= -100 ; i++ ) {
+for (i=1;a-i*n >= -100 ; ++i) {
     p.push(a-i*n);
     if (a-i*n <= 0) break;
 }
