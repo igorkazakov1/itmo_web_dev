@@ -42,8 +42,9 @@ dishW = prompt('Сколько моющего средства есть?');
 if (dishW <=0) {
     console.log('Нечем мыть!')
 }
-for ( let plate = prompt('Сколько тарелок мыть?'); (plate >= 0), (dishW >= 0); plate--) {
-    console.log('Отсталось тарелок - ', plate, 'Осталось моющего средства', dishW);
+for ( let plate = prompt('Сколько тарелок мыть?');(dishW >= 0); plate--) {
+    console.log('Отсталось тарелок - ', plate, 'Осталось моющего средства', dishW)
+    if (plate <=0) break;
     dishW -= 0.5;
 }
 
