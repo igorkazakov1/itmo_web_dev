@@ -8,8 +8,6 @@ function day(x) {
            return console.log(x + ' дня');
        }    else if ((x % 10 === 1) && (x !== 11) && x !== 111)  {
            return console.log(x + ' день')
-       // } else if (1 <= (x - 10) && (x - 10) <=9  ){
-       //     return console.log(x + ' дней')
        } else {
            return console.log(x + ' дней')
        }
@@ -24,7 +22,7 @@ day(12);
 day(15);
 day(101);
 day(115);
-day(123);
+day(131);
 
 // Задача 2 (не обязательная)
 // Напиши функцию map(fn, array), которая принимает на вход функцию и массив,
@@ -40,8 +38,27 @@ day(123);
 // Задача 3
 // Написать функцию клонирующую (создающую копию) массива.
 
+function cloneArr() {
+    return Arr2 = Arr1;
+}
+let Arr1 = [1, 2 ,3];
+let Arr2 = [];
+cloneArr(); // Клонирует Arr1 в Arr2
+Arr1 = [3,2,1]; // Изменяем Arr1
+console.log(Arr1, Arr2);
+
+
 //     Задача 4
 // Написать функцию подсчета суммы от n до m (рекурсия)
+function sumNM(n, m) {
+    if (n <= m) {
+        S += n;
+        sumNM(n+1, m);
+        return S;
+    }console.log(S);
+}
+let S = 0; // переменная для записи суммы n и m
+sumNM(0, 9);
 
 // Задача 5
 // Написать функцию, которая возвращает новую функцию,
@@ -49,3 +66,15 @@ day(123);
 //     Карирование в javascript - прием, позволяющий преобразовать функцию так,
 //     на выходе образуется функция, обладающая возможностью частичного применения...
 // http://dnzl.ru/view_snippets.php?id=69
+
+let func13 = function(x) {
+    return function newFunc() {
+        console.log(x);
+        x -= 13;
+    }
+};
+let res = func13(65);
+res();
+res();
+res();
+res();
