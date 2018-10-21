@@ -1,0 +1,11 @@
+div {
+    height: 100px;
+    width: 100px;
+}
+.conteiner {
+    display: flex;
+    width: 100%;
+}
+.border {
+    border: 0.2px solid;
+}
