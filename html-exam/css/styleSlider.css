@@ -1,0 +1,13 @@
+/*.slider {*/
+    /*height: 60vh;*/
+    /*width: 80vw;*/
+/*}*/
+
+.slider img {
+    display: none;
+    width: 100%;
+}
+
+.slider img.active {
+    display: block;
+}
